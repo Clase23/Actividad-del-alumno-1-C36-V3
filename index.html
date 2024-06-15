@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carreras de autos</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+    <script>
+      // Configuración de Firebase de tu aplicación web
+      //agregar aquí
+      const firebaseConfig = {
+        apiKey: "AIzaSyBFXzQ4p3qVKla9U3vohCU1E_AxAoykXwY",
+        authDomain: "juego-carreras-multijuga-53028.firebaseapp.com",
+        databaseURL: "https://juego-carreras-multijuga-53028-default-rtdb.firebaseio.com",
+        projectId: "juego-carreras-multijuga-53028",
+        storageBucket: "juego-carreras-multijuga-53028.appspot.com",
+        messagingSenderId: "1031767450711",
+        appId: "1:1031767450711:web:ebeb564bfb9be03d6f2f12"
+      };
+
+      // Inicializar Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+   
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
